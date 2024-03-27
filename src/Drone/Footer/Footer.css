@@ -1,0 +1,17 @@
+Footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 20px 100px;
+}
+Footer.top{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+Footer.button{
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-around;
+  align-items: center;
+}

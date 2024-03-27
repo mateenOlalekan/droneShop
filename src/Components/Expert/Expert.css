@@ -1,0 +1,83 @@
+.Expert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    color: #fff;
+    padding: 0px 50px 40px 50px;
+}
+
+.ExpertContent{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.ExpertTitle{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ExpertText{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.ExpertGrid{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+}
+
+.Expertcard{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(35px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding:15px 20px;
+  gap: 15px;
+  overflow: hidden;
+  transition: .43s all ease-in-out;
+}
+
+.Expertcard:hover{
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.Expertcard h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Expertcard p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.learn-more{
+      background: linear-gradient(to right,yellow,rgb(222, 180, 102) ,orange); /* Adjust colors as needed */
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 16px;
+      display: inline-block;
+}

@@ -1,0 +1,182 @@
+.listings {
+  padding: 2rem  100px;
+}
+
+.value{
+  
+}
+
+.listings .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-direction: column;
+}
+.header .headerMain{
+  display: flex;
+  font-weight: 500;
+  font-size: 46px;
+}
+.listings .header .header-title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.listings .header .header-title h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.listings .header .header-title span {
+  color: #545454;
+}
+
+.listings .header .header-viewOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0 auto auto;
+}
+
+.listings .header .header-viewOptions .viewAll {
+  color: #06c167;
+  padding-right: 2rem;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow {
+  background: #eeeeee;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.3;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow.dark, .listings .header .header-viewOptions .viewMore .arrow:hover {
+  opacity: 1;
+}
+
+.listings .circle {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.listings .listings-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.listings .listings-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.listings .listings-grid .listings-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  scroll-snap-align: start;
+  margin-left: 25px;
+}
+
+.listings .listings-grid .listings-grid-element {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 3px;
+  
+}
+
+.listings .listings-grid .listings-grid-element .image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.listings .listings-grid .listings-grid-element .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.listings .listings-grid .listings-grid-element .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.listings .listings-grid .listings-grid-element .text h3 {
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+}
+
+.listings .listings-grid .listings-grid-element .text span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #545454;
+}
+
+.listings .listings-grid .listings-grid-element .text .rating {
+  margin: auto 0 auto auto;
+  height: 100%;
+}
+
+.listings .listings-grid .listings-grid-element .text .rating span {
+  height: 40px;
+  height: 40px;
+  background: #eeeeee;
+  font-size: 1rem;
+  color: black;
+}
